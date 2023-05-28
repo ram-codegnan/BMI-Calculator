@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            background-color: #add8e6;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 25px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+        .button {
+            background-color: #f1f5f0;
+            border: none;
+            color: black;
+            padding: 10px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    <h2>
+        <form action="/calculate_bmi" method="POST">
+            <label for="weights">Weights (in kgs):</label>
+            <input type="text" name="weights" id="weights" required><br><br>
+            <label for="heights">Heights (in meters):</label>
+            <input type="text" name="heights" id="heights" required><br><br>
+        </h2>
+        <h3>
+            <input type="submit" value="Calculate BMI" class="button">
+        </h3>
+        </form>
+</body>
+</html>

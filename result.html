@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BMI Results</title>
+</head>
+<body>
+  <center>  <h1>BMI Results</h1>
+    <ul>
+    {% for category in bmi_categories %}
+        <li>{{ category }}</li>
+    {% endfor %}
+    </ul></center>  
+</body>
+</html>
